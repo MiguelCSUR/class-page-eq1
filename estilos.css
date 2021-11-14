@@ -1,0 +1,218 @@
+/*body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(146, 226, 137);
+}*/
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  line-height: 3rem;
+  position: relative;
+}
+.Menu ul {
+  position: absolute;
+}
+/*Define los atributos del texto y cómo se sombrea al pasar el ratón por encima*/
+nav a {
+  color: rgb(36, 17, 161);
+  display: table;
+  padding: 0 2.5em;
+  text-decoration: none;
+  transition: 0.4s;
+}
+/*Define los colores del sombreado al pasar el ratón por cada opción*/
+nav a:hover {
+  background: rgba(163, 9, 163, 0.5);
+}
+.tabladenombres {
+  padding-left: 500px;
+}
+
+/*Define los atributos del diseño de la tabla de los menús*/
+.Menu {
+  background: rgb(201, 207, 27);
+  display: table;
+  width: 100%;
+}
+/*Desplazar menú a la izquierda*/
+.Menu {
+  float: left;
+}
+/*Color de listas debajo de menú*/
+nav li li {
+  background: rgb(161, 129, 13);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s;
+  width: 200px;
+}
+nav li:hover > ul > li {
+  max-height: 1000px;
+  overflow: visible;
+}
+/*Separación entre menú y listas*/
+.Menu > li > ul {
+  top: 100%;
+}
+.Menu ul ul {
+  left: 100%;
+  top: 0;
+}
+#CONTACTOS {
+  /*Columnas y diseño Responsive*/
+  column-count: 1;
+  column-gap: 3em;
+  column-rule: 25px solid;
+  column-width: 200px;
+}
+/* Imagenes*/
+.opacidad {
+  opacity: 0.1;
+}
+.reflexionDebajo {
+  -webkit-box-reflect: below;
+}
+.reflexionIzquierda {
+  -webkit-box-reflect: right;
+}
+.reflexionDerecha {
+  -webkit-box-reflect: left;
+}
+.reflexionDegradado {
+  -webkit-box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+.reposive {
+  max-width: 100%;
+  height: auto;
+}
+.centralizarImagen {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+}
+.bordeImagen {
+  border-radius: 10px;
+}
+.containerImagen {
+  position: relative;
+  width: 50%;
+}
+.imagenes {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sobreponer {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white; /*Esto cambia el color del fondo de la imagen que se sobrepone*/
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.containerImagen:hover .sobreponer {
+  bottom: 0;
+  height: 100%;
+}
+
+.textitoImagen {
+  white-space: nowrap;
+  color: black; /*Esto cambia el color de la letra*/
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/* esto es para meterlo en la pagina.
+    <div class="containerImagen">
+      <img
+        src="https://img2.rtve.es/a/6096885?w=800&preview=1631787539635.jpg"
+        class="imagenes"
+      />
+      <div class="sobreponer">
+        <div class="textitoImagen">Comeme el pito loco(acento argentino)</div>
+      </div>
+    </div>
+*/
+
+/* STORY 2 - ADOLFO SALADO */
+
+h1 {
+  font-family: "Helvetica, serif"; /* STORY 2.- FUENTES - Apartado A */ /* STORY 2.- FUENTES - Apartado C */
+  font-size: 6px; /* STORY 2.- FUENTES - Apartado B */
+  text-align: center; /* STORY 2.- ALINEACIÓN - Apartado E */
+  text-decoration: underline; /* STORY 2.- FORMATO - Apartado F */
+  text-shadow: 1px 2px 3px black; /* STORY 2.- FORMATO - Apartado G */
+  font-weight: bold; /* STORY 2.- ALINEACIÓN - Apartado H */
+  text-transform: capitalize; /* STORY 2.- FORMATO - Apartado 9 */
+}
+
+body {
+  font-family: "Garamond, san-serif"; /* STORY 2.- FUENTES - Apartado A */ /* STORY 2.- FUENTES - Apartado C */
+  font-size: 20px; /* STORY 2.- FUENTES - Apartado B */
+  text-align: left; /* STORY 2.- ALINEACIÓN - Apartado E */
+}
+
+p {
+  font-family: "Sofia", sans-serif; /* STORY 2.- FUENTES - Apartado D */
+  text-align: left; /* STORY 2.- ALINEACIÓN - Apartado E */
+  font-style: italic; /* STORY 2.- ALINEACIÓN - Apartado I */
+  line-height: 1.8; /* STORY 2.- ESPACIADO - Apartado K */
+  word-spacing: 5px; /* STORY 2.- ESPACIADO - Apartado L */
+  text-indent: 0000; /* STORY 2.- FORMATO - Apartado M */
+}
+
+ul {
+  text-decoration: overline; /* STORY 2.- FORMATO - Apartado F */
+}
+
+ol {
+  text-decoration: line-through; /* STORY 2.- FORMATO - Apartado F */
+}
+
+p.icono {
+  /* STORY 2.- ICONOS - Apartado N */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+}
+
+a {
+  /* STORY 2.- LINKS - Apartado O */
+  text-align: left;
+  color: red;
+}
+
+a:visited {
+  /* STORY 2.- LINKS - Apartado P */
+  background-color: yellow;
+  border-color: hotpink;
+  color: hotpink;
+}
+
+a:hover {
+  /* STORY 2.- LINKS - Apartado P */
+  color: orange;
+}
+
+/* STORY 1.- FONDOS  (MARÍA)*/
+.index {
+  background-image: url("resources/images/doom.png");
+  background-size: 100%;
+}
+
+.aboutus {
+  background-image: url("resources/images/mario2.png");
+  background-size: 100%;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<!-- Metadatos de la web -->
+<head>
+    <title>PÁGINA DE CONTACTO</title> <!-- Título de la página -->
+		<meta charset="UTF-8"> <!-- Codifación de la web -->
+		<meta name="author" content="Equipo1"> <!-- Autor de la página web -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Formato responsivo -->
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+
+<body>
+    <!-- Información que se va a mostrar al usuario -->
+    <header>
+        <!-- Encabezado de la página  -->
+        <h3>
+            <!-- barra de navegación -->
+            <nav>
+                <!-- Enlace a la Página Principal -->
+                <a href="index.html">Página Principal</a>
+                <!-- Enlace a la Sobre Nosotros -->
+                <a href="aboutus.html">Sobre Nosotros</a>
+                <!-- Enlace a la Servicios -->
+                <a href="servicios.html">Servicios</a>
+                <!-- Enlace a la Contacto -->
+                <a href="contacto.html">Contacto</a>
+                <!-- Enlace a la Página Libre -->
+                <a href="libre.html">Página Libre</a>
+            </nav>
+        </h3>
+    <!-- Fin de header -->
+    </header>
+    <!-- Información princial de la página -->
+    <main>
+        <!-- Letras de encabezado 1, son las más grandes, de mayor relevancia, van del 1 al 6 -->
+        <h1>
+            Contacto
+        </h1>
+        <!-- Imgaen, se puede especificar el ancho y alto, en el caso de que solo se especifique uno, la imagen se escalará automáticamente. src es para indicar la posición de la imagen sea local o web. -->
+        <img width="600"
+            src="resources/images/equipo_uno_concentrado.jpeg"></img>
+        <p class = "contacto1" ><big>Estamos siempre abiertos a compartir contenido. Por favor, si tienes alguna duda, o simplemente</big></p>
+        <p><big>quieres compartir qué te ha parecido nuestro contenido con nosotros, no dudes en contactarnos.</big></p>
+        <br>
+        <hr>
+
+        <h2>
+            Comentarios
+        </h2>
+
+        <h2>
+            Modos de contacto
+        </h2>
+        <!-- Lista desordenada (unorder list) -->
+            <!-- lista -->
+            <ul>
+            <li>
+                <h3>
+                    Contacto por Página:
+                </h3>
+            </li>
+            <p>Dejános un mensaje por la página. Rellena tus datos y coméntanos lo que quieras. </p>
+            <!-- Formulario -->
+            <form>
+                <!-- campo de texto -->
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="fname" required max="40">
+                <br>
+                <!-- campo de texto -->
+                <label for="lname">Teléfono</label>
+                <input type="tel" id="lname" name="lname" required max="15">
+                <br>
+                <!-- campo de texto -->
+                <label for="lname"><i>E-mail</i></label>
+                <input type="email" id="lname" name="lname" required max="30">
+                <br>
+                <!-- campo de select, selección de campos -->
+                <label for="lname">Motivo</label>
+                <select name="reason" id="reason" required>
+                  <option value="consult">Consulta</option>
+                  <option value="suggestion">Recomendaciones</option>
+                  <option value="opinion">Opinión</option>
+                  <option value="review">Crítica Constructiva</option>
+                </select>
+                <br>
+                <!-- campo radio button -->
+                <label for="sex">Sexo</label>
+                <input type="radio" id="male" name="sex" value="male">
+                <label for="male">Masculino</label>
+                <input type="radio" id="female" name="sex" value="female" >
+                <label for="female">Femenino</label>
+                <input type="radio" id="othter" name="sex" value="other" >
+                <label for="other">No Responder</label>
+                <br>
+                <!-- textarea, cuadro de texto para añadir comentarios, cols especifica el ancho del texto, row el alto en lineas-->
+                <textarea name="coment" id="coment" cols="30" rows="10"
+                placeholder="Comenta lo que quieras."></textarea>
+                <br>
+                <input type="checkbox" id="terms" name="terms" value="accept-terms" checked required>
+                <label for="terms">Aceptar los <a href="terms.html"><b>Términos y Servicios.</b></a></label>
+                <br>
+                <br>
+                <input type="submit" value="Enviar" dirname="contact.html">
+                <input type="reset">
+            </form>
+            <br>
+            <!-- lista -->
+            <li>
+                <h3>
+                    Correo Electrónico:
+                </h3>
+            </li>
+            <p>Mándanos un <i>e-mail</i> a nuestra dirección de correo: <b>eq1@gmail.com</b></p>
+            <br>
+            <li>
+                <h3>
+                    Correo Ordinario:
+                </h3>
+            </li>
+            <p>Si te va el rollo analógico, y quieres mándarnos un correo ordinario, nos encontrarás en la dirección: <b>Pl. Virgen
+                    Milagrosa, 11, 29017 Málaga</b></p>
+            <p><small>Por favor, no vengas en persona. No nos gusta mucho el trato físico... &#128517;</small></p>
+            <!-- iframe, es una ventana que muestra un trozo de la página de youtube, convenientemente la del video. -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.1180292975423!2d-4.367823984712368!3d36.719726479965225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259120bfc4db3%3A0xec0ecedd8dc61902!2sCesur%20M%C3%A1laga%20Este%20-%20Formaci%C3%B3n%20Profesional!5e0!3m2!1sen!2ses!4v1634147483727!5m2!1sen!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </ul>
+    </main>
+    <hr />
+    <!-- Autores y símbolo de copyright -->
+    <footer>
+      <p>
+        Autores: alumnos "CFGS Desarrollo de Aplicaciones Multiplataforma". <br />
+      </p>
+    </footer>
+</body>
+<!-- Fin del html, termina el documento -->
+</html>
